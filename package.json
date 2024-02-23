@@ -6,6 +6,14 @@
   "engines": {
     "vscode": "^1.86.0"
   },
+  "publisher": "morningstart",
+  "icon": "images/logo.ico",
+  "keywords": [
+    "morningstart",
+    "django",
+    "python"
+  ],
+  "repository":"https://github.com/morning-start/vscode-django-manager",
   "categories": [
     "Other"
   ],
