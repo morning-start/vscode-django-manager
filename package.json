@@ -14,14 +14,50 @@
   "contributes": {
     "commands": [
       {
-        "command": "django-manager.runserver",
-        "title": "runserver",
-        "category": "Runner",
+        "command": "django-manager.startProject",
+        "title": "startProject",
+        "category": "django-manager"
+      },
+      {
+        "command": "django-manager.startApp",
+        "title": "startApp",
+        "category": "django-manager"
+      },
+      {
+        "command": "django-manager.makeMigrations",
+        "title": "makeMigrations",
+        "category": "django-manager"
+      },
+      {
+        "command": "django-manager.migrate",
+        "title": "migrate",
+        "category": "django-manager"
+      },
+      {
+        "command": "django-manager.runServer",
+        "title": "runServer",
+        "category": "django-manager",
         "icon": "$(play)"
       }
     ],
+    "configuration": {
+      "type": "object",
+      "title": "django-manager",
+      "properties": {
+        "django-manager.runServer": {
+          "type": "object",
+          "markdownDescription": "runServer port",
+          "default": {
+            "port": "8080"
+          },
+          "additionalProperties": {
+            "type": "number"
+          }
+        }
+      }
+    },
     "keybindings": {
-      "command": "runner.run",
+      "command": "django-manager.runServer",
       "key": "ctrl+alt+r",
       "mac": "cmd+alt+r",
       "when": "editorTextFocus"
