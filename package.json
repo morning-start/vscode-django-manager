@@ -2,7 +2,7 @@
   "name": "django-manager",
   "displayName": "django-manager",
   "description": "django shell",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.86.0"
   },
@@ -13,7 +13,7 @@
     "django",
     "python"
   ],
-  "repository":"https://github.com/morning-start/vscode-django-manager",
+  "repository": "https://github.com/morning-start/vscode-django-manager",
   "categories": [
     "Other"
   ],
@@ -69,6 +69,14 @@
       "key": "ctrl+alt+r",
       "mac": "cmd+alt+r",
       "when": "editorTextFocus"
+    },
+    "menus": {
+      "editor/title/run": [
+        {
+          "command": "django-manager.runServer",
+          "when": "editorLangId==python || editorLangId==django-html"
+        }
+      ]
     }
   },
   "scripts": {

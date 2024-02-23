@@ -16,7 +16,7 @@ function createTerminal(): vscode.Terminal {
   shell.sendText(
     `cd ${vscode.workspace.workspaceFolders?.[0].uri.fsPath}`
   );
-  shell.sendText('clear');
+  // shell.sendText('clear');
   // shell.show(); // 如果需要显示终端，可以取消注释这行代码
   return shell;
 }
@@ -53,7 +53,7 @@ export async function startProject() {
   // shell.sendText(`rm ${projectName}`);
   // // 清除终端
   // shell.sendText(`clear`);
-  vscode.window.showInformationMessage(`创建项目成功`);
+  vscode.window.showInformationMessage(`create project success!`);
 }
 
 export async function startApp() {
