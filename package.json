@@ -2,7 +2,7 @@
   "name": "django-manager",
   "displayName": "django-manager",
   "description": "django shell",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.86.0"
   },
@@ -26,7 +26,6 @@
         "title": "startProject",
         "category": "django-manager",
         "shortTitle": "start a new django project"
-
       },
       {
         "command": "django-manager.startApp",
