@@ -4,7 +4,7 @@ this is a django manager command just `ctrl+shift+p` and input `django-manager`
 
 ## Warning
 
-this extension need your default terminal to be `powershell`.
+**!!!**this extension need your default terminal to be `powershell`.
 
 ## Features
 

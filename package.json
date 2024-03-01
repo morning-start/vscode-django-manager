@@ -24,27 +24,33 @@
       {
         "command": "django-manager.startProject",
         "title": "startProject",
-        "category": "django-manager"
+        "category": "django-manager",
+        "shortTitle": "start a new django project"
+
       },
       {
         "command": "django-manager.startApp",
         "title": "startApp",
-        "category": "django-manager"
+        "category": "django-manager",
+        "shortTitle": "start a new django app"
       },
       {
         "command": "django-manager.makeMigrations",
         "title": "makeMigrations",
-        "category": "django-manager"
+        "category": "django-manager",
+        "shortTitle": "makeMigrations"
       },
       {
         "command": "django-manager.migrate",
         "title": "migrate",
-        "category": "django-manager"
+        "category": "django-manager",
+        "shortTitle": "migrate"
       },
       {
         "command": "django-manager.runServer",
         "title": "runServer",
         "category": "django-manager",
+        "shortTitle": "run django server",
         "icon": "$(play)"
       }
     ],
@@ -52,15 +58,20 @@
       "type": "object",
       "title": "django-manager",
       "properties": {
+        "django-manager.startProject": {
+          "type": "boolean",
+          "markdownDescription": "create project in current folder",
+          "default": false
+        },
+        "django-manager.startApp": {
+          "type": "boolean",
+          "markdownDescription": "create `urls.py, templates, static` in new app",
+          "default": false
+        },
         "django-manager.runServer": {
-          "type": "object",
+          "type": "number",
           "markdownDescription": "runServer port",
-          "default": {
-            "port": "8080"
-          },
-          "additionalProperties": {
-            "type": "number"
-          }
+          "default": 8080
         }
       }
     },
