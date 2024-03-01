@@ -13,7 +13,9 @@
     "django",
     "python"
   ],
-  "repository": "https://github.com/morning-start/vscode-django-manager",
+  "repository": {
+    "type": "git",
+    "url":"https://github.com/morning-start/vscode-django-manager"},
   "categories": [
     "Other"
   ],
