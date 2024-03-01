@@ -2,7 +2,7 @@
   "name": "django-manager",
   "displayName": "django-manager",
   "description": "django shell",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.86.0"
   },
@@ -15,7 +15,8 @@
   ],
   "repository": {
     "type": "git",
-    "url":"https://github.com/morning-start/vscode-django-manager"},
+    "url": "https://github.com/morning-start/vscode-django-manager"
+  },
   "categories": [
     "Other"
   ],
