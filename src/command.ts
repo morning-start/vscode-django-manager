@@ -8,9 +8,8 @@ function createTerminal(): vscode.Terminal {
   const terminals = vscode.window.terminals;
   // 查找名为"Runner"的终端，如果不存在则创建
   const shell =
-    // terminals.find((item) => item.name === "Runner") ||
+    terminals.find((item) => item.name === "Runner") ||
     vscode.window.createTerminal("Runner");
-
   // 将终端工作目录设置为当前工作目录
   shell.sendText(`cd ${vscode.workspace.workspaceFolders?.[0].uri.fsPath}`);
   // shell.sendText('clear');
